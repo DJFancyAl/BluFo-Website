@@ -43,8 +43,8 @@
     .accordion-button {
       border-radius: var(--#{$prefix}accordion-borderless-btn-border-radius);
       &:not(.collapsed) {
-        background-color: var(--#{$prefix}accordion-borderless-btn-bg);
-        color: var(--#{$prefix}accordion-borderless-btn-color);
+        background-color: $primary;
+        color: #fff;
         box-shadow: none;
       }
     }

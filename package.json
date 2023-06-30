@@ -2,5 +2,11 @@
   "name": "mdb-standard-app",
   "version": "6.4.0",
   "homepage": "https://mdbootstrap.com/docs/standard/",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  },
+  "scripts": {
+    "compile:sass": "sass ./src/scss/mdb.free.scss css/mdb.min.css"
+  }
 }

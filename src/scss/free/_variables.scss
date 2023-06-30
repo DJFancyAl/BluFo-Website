@@ -629,7 +629,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: #3b71ca !default;
+$primary: #104e0e !default;
 $secondary: #9fa6b2 !default;
 $success: #14a44d !default;
 $danger: #dc4c64 !default;
@@ -978,9 +978,9 @@ $buttons: map-merge(
       'shadow-color': $primary,
     ),
     'secondary': (
-      'background-color': #e3ebf7,
-      'text-color': #285192,
-      'shadow-color': #e3ebf7,
+      'background-color': $secondary,
+      'text-color': $primary,
+      'shadow-color': $primary,
     ),
     'success': (
       'background-color': $success,
