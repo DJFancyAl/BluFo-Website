@@ -409,7 +409,7 @@ $body-text-align: null !default;
 $link-color: $primary !default;
 $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $secondary !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -1066,7 +1066,7 @@ $nav-link-padding-y: 0.5rem !default;
 $nav-link-padding-x: 1rem !default;
 $nav-link-font-size: null !default;
 $nav-link-font-weight: null !default;
-$nav-link-color: var(--#{$prefix}link-color) !default;
+$nav-link-color: $light !default;
 $nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
 $nav-link-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out !default;
@@ -1261,7 +1261,7 @@ $card-group-margin: $grid-gutter-width * 0.5 !default;
 $accordion-padding-y: 1rem !default;
 $accordion-padding-x: 1.25rem !default;
 $accordion-color: $body-color !default; // Sass variable because of $accordion-button-icon
-$accordion-bg: $body-bg !default;
+$accordion-bg: $primary !default;
 $accordion-border-width: $border-width !default;
 $accordion-border-color: var(--#{$prefix}border-color) !default;
 $accordion-border-radius: $border-radius !default;
@@ -1548,7 +1548,7 @@ $carousel-indicator-active-opacity: 1 !default;
 $carousel-indicator-transition: opacity 0.6s ease !default;
 
 $carousel-caption-width: 70% !default;
-$carousel-caption-color: $white !default;
+$carousel-caption-color: $primary !default;
 $carousel-caption-padding-y: 1.25rem !default;
 $carousel-caption-spacer: 1.25rem !default;
 

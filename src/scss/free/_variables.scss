@@ -680,7 +680,7 @@ $link-shade-percentage: 5% !default;
 $link-shade-focus-percentage: 10% !default;
 $link-shade-active-percentage: 15% !default;
 $link-hover-decoration: none !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $secondary !default;
 $link-focus-color: shift-color($link-color, $link-shade-focus-percentage) !default;
 $link-active-color: shift-color($link-color, $link-shade-active-percentage) !default;
 // Components
@@ -1496,7 +1496,7 @@ $card-img-overlay-padding: 1.5rem !default;
 $accordion-padding-y: 1.15rem !default;
 $accordion-padding-x: 1.5rem !default;
 $accordion-button-active-bg: $white !default;
-$accordion-button-active-color: $primary !default;
+$accordion-button-active-color: $secondary !default;
 $accordion-button-focus-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125) !default;
 $accordion-border-radius: $border-radius-lg !default;
 $accordion-flush-button-box-shadow: inset 0 -2px 0 hsl(0, 0%, 96%) !default;
