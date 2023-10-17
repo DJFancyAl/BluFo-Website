@@ -3701,7 +3701,7 @@ textarea.form-control-lg {
 
 .navbar {
   --mdb-navbar-padding-x: 0;
-  --mdb-navbar-padding-y: 0.5rem;
+  --mdb-navbar-padding-y: 2rem;
   --mdb-navbar-color: rgba(0, 0, 0, 0.55);
   --mdb-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --mdb-navbar-disabled-color: rgba(0, 0, 0, 0.3);
@@ -15356,7 +15356,6 @@ fieldset:disabled .btn-group-vertical > .btn {
   --mdb-navbar-padding-top: 0.5625rem;
   --mdb-navbar-brand-img-margin-right: 0.25rem;
   box-shadow: var(--mdb-navbar-box-shadow);
-  padding-top: var(--mdb-navbar-padding-top);
 }
 
 .navbar-toggler {
@@ -15993,6 +15992,8 @@ fieldset:disabled .btn-group-vertical > .btn {
 .navbar-shrink {
   transition: 0.7s;
   background-color: #0D264D;
+  padding-top: 0.5625rem;
+  padding-bottom: 0.5625rem;
 }
 
 .nav-pills.menu-sidebar .nav-link {
