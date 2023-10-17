@@ -20,10 +20,11 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
+
   <body>
 
     <!-- Navbar -->
-    <nav style="z-index: 1; min-height: 58.59px;" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav id="mainNav" style="z-index: 1; min-height: 58.59px;" class="navbar navbar-expand-lg navbar-dark transparent fixed-top">
       <!-- Container wrapper -->
       <div class="container">
         <!-- Navbar brand -->
@@ -60,10 +61,10 @@
               <a class="nav-link" href="#solutions">Solutions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Websites</a>
+              <a class="nav-link" href="#websites">Websites</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <!-- Left links -->
@@ -114,19 +115,19 @@
               <i class="fas fa-hourglass-half fa-4x text-primary"></i>
               <h3 class="my-3 display-6">Scripting</h3>
               <p class="text-start">Often the best solution for expensive - repetitve tasks. A lightweight solution to solve big problems - scripts will have you cutting corners in no-time.</p>
-              <button type="button" class="btn btn-primary w-50 mx-auto">More</button>
+              <button type="button" class="btn btn-primary w-50 mx-auto" data-mdb-toggle="modal" data-mdb-target="#scriptingModal">More</button>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 text-center d-flex flex-column py-5">
               <i class="fas fa-tablet-screen-button fa-4x text-primary"></i>
               <h3 class="my-3  display-6">App Development</h3>
               <p class="text-start">Often the best solution for expensive - repetitve tasks. A lightweight solution to solve big problems - scripts will have you cutting corners in no-time.</p>
-              <button type="button" class="btn btn-primary w-50 mx-auto">More</button>
+              <button type="button" class="btn btn-primary w-50 mx-auto" data-mdb-toggle="modal" data-mdb-target="#appModal">More</button>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 text-center d-flex flex-column py-5">
               <i class="fas fa-chart-pie fa-4x text-primary"></i>
               <h3 class="my-3  display-6">Data Analysis</h3>
               <p class="text-start">Often the best solution for expensive - repetitve tasks. A lightweight solution to solve big problems - scripts will have you cutting corners in no-time.</p>
-              <button type="button" class="btn btn-primary w-50 mx-auto">More</button>
+              <button type="button" class="btn btn-primary w-50 mx-auto" data-mdb-toggle="modal" data-mdb-target="#dataModal">More</button>
             </div>
           </section>
       </div>
@@ -162,21 +163,21 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./img/automation.webp" class="d-block w-100" alt="Automation Scripting"/>
-                <div class="carousel-caption d-none d-md-block bg-secondary rounded-4">
+                <div class="carousel-caption d-none d-md-block rounded-4 text-secondary bg-primary">
                   <h3 class="display-5">Automation</h3>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./img/apps.webp" class="d-block w-100" alt="Web Apps"/>
-                <div class="carousel-caption d-none d-md-block bg-secondary rounded-4">
+                <div class="carousel-caption d-none d-md-block bg-primary text-light rounded-4">
                   <h3 class="display-5">Business Applications</h3>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./img/data_analysis.webp" class="d-block w-100" alt="Data Analysis"/>
-                <div class="carousel-caption d-none d-md-block bg-secondary rounded-4">
+                <div class="carousel-caption d-none d-md-block bg-light text-primary rounded-4">
                   <h3 class="display-5">Put Data to Work for You</h3>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
@@ -244,7 +245,7 @@
       <!-- Contact Section -->
       <section id="contact" class="bg-image shadow-3-strong" style="background-image: url('./img/lockport.jpg'); height: 700px;">
         <!-- <img src="./img/lockport.jpg" /> -->
-        <div class="mask" style="background-color: rgba(13, 38, 77, 0.7)">
+        <div class="mask" style="background-color: rgba(13, 38, 77, 0.85)">
           <div class="text-white h-100 w-100 d-flex align-items-center justify-content-center row m-0">
             <div class="col-xs-12 col-md-8 m-auto">
               <h2 class="display-4 text-center p-5">Get in Touch</h2>
@@ -330,7 +331,7 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>BluFo Innovations
+                BluFo Innovations
               </h6>
               <p>
                 We're helping Western New York businesses achieve their software goals. We'll work with you to propel your company forward.
@@ -344,16 +345,16 @@
                 Services
               </h6>
               <p>
-                <a href="#!">Task Automation</a>
+                <a href="#!" data-mdb-toggle="modal" data-mdb-target="#scriptingModal">Task Automation</a>
               </p>
               <p>
-                <a href="#!">App Development</a>
+                <a href="#!" data-mdb-toggle="modal" data-mdb-target="#appModal">App Development</a>
               </p>
               <p>
-                <a href="#!">Data Visualization</a>
+                <a href="#!" data-mdb-toggle="modal" data-mdb-target="#dataModal">Data Visualization</a>
               </p>
               <p>
-                <a href="#!">Website Marketing</a>
+                <a href="#websites">Website Marketing</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -395,6 +396,78 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <!-- Scripting Modal -->
+    <div class="modal fade" id="scriptingModal" tabindex="-1" aria-labelledby="scriptingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-primary">
+          <div class="modal-header">
+            <h4 class="modal-title" id="scriptingModalLabel"><i class="fas fa-hourglass-half me-2"></i>Automation Scripting</h4>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit viverra cras, litora diam metus lectus malesuada bibendum faucibus placerat dictum ac, sodales nullam libero himenaeos nisl a vulputate vestibulum. Cubilia auctor litora blandit commodo tincidunt cras, ornare etiam vivamus enim elementum. Bibendum phasellus curabitur duis interdum tempus lacinia fusce quam, volutpat conubia hendrerit facilisi morbi vehicula mauris, feugiat cum cursus ridiculus hac ut velit. Magna congue diam ut hac nec habitasse augue ultricies libero, class quisque turpis ridiculus id tincidunt sociosqu dictum, praesent lobortis semper aenean ad porttitor primis tristique. Turpis commodo molestie sem convallis tellus aptent lectus, magna massa natoque orci bibendum ridiculus, taciti varius arcu in semper posuere.
+            </p>
+
+            <p>
+              Sodales vivamus enim justo massa vulputate scelerisque parturient habitasse curae facilisis litora quisque nam, vehicula leo accumsan sapien orci magna viverra egestas mollis vel cum. Curabitur mus quisque nascetur porttitor accumsan neque risus, turpis tincidunt suspendisse proin himenaeos habitant ultricies, ut vestibulum leo molestie cursus congue. Imperdiet aenean tempus integer sem etiam aptent nunc vitae cursus lacinia, fermentum volutpat donec tellus conubia semper laoreet penatibus class. Posuere inceptos blandit velit libero a condimentum auctor at sagittis ultricies, fermentum sociosqu sociis mollis cursus praesent volutpat cum in eu placerat, rutrum potenti parturient massa leo scelerisque facilisi lectus etiam. Nibh varius mollis penatibus lectus, dis sollicitudin hendrerit imperdiet porta, lobortis parturient vehicula. Praesent maecenas conubia rutrum tellus netus mauris nascetur, malesuada condimentum sociis accumsan libero venenatis sed, in inceptos senectus tempus aptent taciti, felis arcu class curabitur nullam ligula.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Return</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Modal -->
+    <div class="modal fade" id="appModal" tabindex="-1" aria-labelledby="appModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-primary">
+          <div class="modal-header">
+            <h4 class="modal-title" id="appModalLabel"><i class="fas fa-tablet-screen-button me-2"></i>App Development</h4>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit viverra cras, litora diam metus lectus malesuada bibendum faucibus placerat dictum ac, sodales nullam libero himenaeos nisl a vulputate vestibulum. Cubilia auctor litora blandit commodo tincidunt cras, ornare etiam vivamus enim elementum. Bibendum phasellus curabitur duis interdum tempus lacinia fusce quam, volutpat conubia hendrerit facilisi morbi vehicula mauris, feugiat cum cursus ridiculus hac ut velit. Magna congue diam ut hac nec habitasse augue ultricies libero, class quisque turpis ridiculus id tincidunt sociosqu dictum, praesent lobortis semper aenean ad porttitor primis tristique. Turpis commodo molestie sem convallis tellus aptent lectus, magna massa natoque orci bibendum ridiculus, taciti varius arcu in semper posuere.
+            </p>
+
+            <p>
+              Sodales vivamus enim justo massa vulputate scelerisque parturient habitasse curae facilisis litora quisque nam, vehicula leo accumsan sapien orci magna viverra egestas mollis vel cum. Curabitur mus quisque nascetur porttitor accumsan neque risus, turpis tincidunt suspendisse proin himenaeos habitant ultricies, ut vestibulum leo molestie cursus congue. Imperdiet aenean tempus integer sem etiam aptent nunc vitae cursus lacinia, fermentum volutpat donec tellus conubia semper laoreet penatibus class. Posuere inceptos blandit velit libero a condimentum auctor at sagittis ultricies, fermentum sociosqu sociis mollis cursus praesent volutpat cum in eu placerat, rutrum potenti parturient massa leo scelerisque facilisi lectus etiam. Nibh varius mollis penatibus lectus, dis sollicitudin hendrerit imperdiet porta, lobortis parturient vehicula. Praesent maecenas conubia rutrum tellus netus mauris nascetur, malesuada condimentum sociis accumsan libero venenatis sed, in inceptos senectus tempus aptent taciti, felis arcu class curabitur nullam ligula.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Return</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Modal -->
+    <div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="dataModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-primary">
+          <div class="modal-header">
+            <h4 class="modal-title" id="dataModalLabel"><i class="fas fa-chart-pie me-2"></i>Data Analysis</h4>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit viverra cras, litora diam metus lectus malesuada bibendum faucibus placerat dictum ac, sodales nullam libero himenaeos nisl a vulputate vestibulum. Cubilia auctor litora blandit commodo tincidunt cras, ornare etiam vivamus enim elementum. Bibendum phasellus curabitur duis interdum tempus lacinia fusce quam, volutpat conubia hendrerit facilisi morbi vehicula mauris, feugiat cum cursus ridiculus hac ut velit. Magna congue diam ut hac nec habitasse augue ultricies libero, class quisque turpis ridiculus id tincidunt sociosqu dictum, praesent lobortis semper aenean ad porttitor primis tristique. Turpis commodo molestie sem convallis tellus aptent lectus, magna massa natoque orci bibendum ridiculus, taciti varius arcu in semper posuere.
+            </p>
+
+            <p>
+              Sodales vivamus enim justo massa vulputate scelerisque parturient habitasse curae facilisis litora quisque nam, vehicula leo accumsan sapien orci magna viverra egestas mollis vel cum. Curabitur mus quisque nascetur porttitor accumsan neque risus, turpis tincidunt suspendisse proin himenaeos habitant ultricies, ut vestibulum leo molestie cursus congue. Imperdiet aenean tempus integer sem etiam aptent nunc vitae cursus lacinia, fermentum volutpat donec tellus conubia semper laoreet penatibus class. Posuere inceptos blandit velit libero a condimentum auctor at sagittis ultricies, fermentum sociosqu sociis mollis cursus praesent volutpat cum in eu placerat, rutrum potenti parturient massa leo scelerisque facilisi lectus etiam. Nibh varius mollis penatibus lectus, dis sollicitudin hendrerit imperdiet porta, lobortis parturient vehicula. Praesent maecenas conubia rutrum tellus netus mauris nascetur, malesuada condimentum sociis accumsan libero venenatis sed, in inceptos senectus tempus aptent taciti, felis arcu class curabitur nullam ligula.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Return</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>

@@ -34,7 +34,7 @@
   &:focus {
     color: $input-focus-color;
     background-color: $input-focus-bg;
-    border-color: $input-focus-border-color;
+    border-color: $secondary;
     outline: 0;
     @if $enable-shadows {
       @include box-shadow($input-box-shadow, $input-focus-box-shadow);
@@ -106,7 +106,7 @@
   line-height: $input-line-height;
   color: $input-plaintext-color;
   background-color: transparent;
-  border: solid transparent;
+  border: solid $secondary;
   border-width: $input-border-width 0;
 
   &:focus {

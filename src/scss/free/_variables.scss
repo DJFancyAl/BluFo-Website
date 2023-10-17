@@ -1124,12 +1124,13 @@ $input-transition: all 0.2s linear !default;
 $form-label-left: 0.75rem !default;
 $form-label-padding-top: 0.37rem !default;
 $form-label-transition: all 0.2s ease-out !default;
-$form-label-color: rgba(0, 0, 0, 0.6) !default;
+$form-label-color: rgba(13, 38, 77, 0.6) !default;
+$form-label-color: $primary !default;
 
 $input-focus-active-label-transform: translateY(-1rem) translateY(0.1rem) scale(0.8) !default;
-$input-focus-label-color: $primary !default;
-$input-focus-border-width: 0.125rem !default;
-$input-focus-border-color: $primary !default;
+$input-focus-label-color: $secondary !default;
+$input-focus-border-width: 0.1rem !default;
+$input-focus-border-color: $secondary !default;
 $input-disabled-background-color: #e9ecef !default;
 
 $input-font-size-lg: 1rem !default;

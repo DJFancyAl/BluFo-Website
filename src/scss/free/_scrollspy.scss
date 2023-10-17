@@ -1,4 +1,8 @@
 // Scrollspy
+.navbar-shrink {
+  transition: 0.7s;
+  background-color: $primary;
+}
 
 .nav-pills {
   &.menu-sidebar {

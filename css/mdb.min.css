@@ -1952,7 +1952,7 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(13, 38, 77, 0.6);
 }
 
 .col-form-label {
@@ -1961,7 +1961,7 @@ progress {
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.6;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(13, 38, 77, 0.6);
 }
 
 .col-form-label-lg {
@@ -2012,7 +2012,7 @@ progress {
 .form-control:focus {
   color: #4f4f4f;
   background-color: #fff;
-  border-color: #0D264D;
+  border-color: #FD016E;
   outline: 0;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem rgba(13, 38, 77, 0.25);
 }
@@ -2058,7 +2058,7 @@ progress {
   line-height: 1.6;
   color: #4f4f4f;
   background-color: transparent;
-  border: solid transparent;
+  border: solid #FD016E;
   border-width: 1px 0;
 }
 .form-control-plaintext:focus {
@@ -2228,7 +2228,7 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #0D264D;
+  border-color: #FD016E;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 38, 77, 0.25);
 }
@@ -2274,7 +2274,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%230D264D'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23FD016E'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
@@ -4588,7 +4588,7 @@ textarea.form-control-lg {
   --mdb-accordion-btn-icon-transform: rotate(-180deg);
   --mdb-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --mdb-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FD016E'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  --mdb-accordion-btn-focus-border-color: #0D264D;
+  --mdb-accordion-btn-focus-border-color: #FD016E;
   --mdb-accordion-btn-focus-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
   --mdb-accordion-body-padding-x: 1.5rem;
   --mdb-accordion-body-padding-y: 1.15rem;
@@ -13086,7 +13086,7 @@ i.flag-zw:before, i.flag-zimbabwe:before {
   pointer-events: none;
   transform-origin: 0 0;
   transition: all 0.2s ease-out;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(13, 38, 77, 0.6);
   margin-bottom: 0;
 }
 .form-outline .form-control ~ .form-notch {
@@ -13143,7 +13143,7 @@ i.flag-zw:before, i.flag-zimbabwe:before {
   transform: translateY(-1rem) translateY(0.1rem) scale(0.8);
 }
 .form-outline .form-control:focus ~ .form-label {
-  color: #0D264D;
+  color: #FD016E;
 }
 .form-outline .form-control:focus ~ .form-notch .form-notch-middle, .form-outline .form-control.active ~ .form-notch .form-notch-middle {
   border-right: none;
@@ -13151,23 +13151,23 @@ i.flag-zw:before, i.flag-zimbabwe:before {
   border-top: 1px solid transparent;
 }
 .form-outline .form-control:focus ~ .form-notch .form-notch-middle {
-  border-color: #0D264D;
-  box-shadow: 0 1px 0 0 #0D264D;
+  border-color: #FD016E;
+  box-shadow: 0 1px 0 0 #FD016E;
   border-top: 1px solid transparent;
 }
 .form-outline .form-control:focus ~ .form-notch .form-notch-leading, .form-outline .form-control.active ~ .form-notch .form-notch-leading {
   border-right: none;
 }
 .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
-  border-color: #0D264D;
-  box-shadow: -1px 0 0 0 #0D264D, 0 1px 0 0 #0D264D, 0 -1px 0 0 #0D264D;
+  border-color: #FD016E;
+  box-shadow: -1px 0 0 0 #FD016E, 0 1px 0 0 #FD016E, 0 -1px 0 0 #FD016E;
 }
 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing, .form-outline .form-control.active ~ .form-notch .form-notch-trailing {
   border-left: none;
 }
 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
-  border-color: #0D264D;
-  box-shadow: 1px 0 0 0 #0D264D, 0 -1px 0 0 #0D264D, 0 1px 0 0 #0D264D;
+  border-color: #FD016E;
+  box-shadow: 1px 0 0 0 #FD016E, 0 -1px 0 0 #FD016E, 0 1px 0 0 #FD016E;
 }
 .form-outline .form-control:disabled, .form-outline .form-control.disabled, .form-outline .form-control[readonly] {
   background-color: #e9ecef;
@@ -15988,6 +15988,11 @@ fieldset:disabled .btn-group-vertical > .btn {
 
 .popover-header {
   border-bottom: var(--mdb-popover-border-bottom-width) solid var(--mdb-popover-border-color);
+}
+
+.navbar-shrink {
+  transition: 0.7s;
+  background-color: #0D264D;
 }
 
 .nav-pills.menu-sidebar .nav-link {
